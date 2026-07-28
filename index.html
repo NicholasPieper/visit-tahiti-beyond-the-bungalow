@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Beyond the Bungalow — a Visit Tahiti concept campaign by Stas &amp; Nick</title>
+<meta name="description" content="A sample UGC video campaign reframing Tahiti as an active adventure and culture destination — five vertical video deliverables moving viewers from wow to saved-and-planned.">
+<meta property="og:title" content="Beyond the Bungalow — Visit Tahiti concept campaign">
+<meta property="og:description" content="Five vertical videos that move a viewer from 'wow' to 'saved, let's plan it' — by Stas & Nick, travel filmmakers & UGC creators.">
+<meta property="og:image" content="https://res.cloudinary.com/nr3qi8yk/image/upload/v1785216975/DSCF1014_jkzpij.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23dceaf1'/%3E%3Ccircle cx='16' cy='16' r='8' fill='%23146a8f'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Archivo:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: #eef4f7; color: #16303c; font-family: 'Archivo', system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+  a { color: #146a8f; text-decoration: none; }
+  a:hover { color: #0d4a65; text-decoration: underline; }
+  @keyframes rise { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
+  @media (min-width: 720px) {
+    .vid-row { grid-template-columns: repeat(5, 1fr) !important; }
+  }
+</style>
+</helmet>
+<div style="max-width: 100%; overflow-x: clip;">
+
+
+  <!-- ===================== 1 · HERO + OBJECTIVE + STRATEGY (one screen) ===================== -->
+  <header style="position: relative; min-height: 100svh; box-sizing: border-box; display: flex; flex-direction: column; justify-content: space-between; gap: clamp(32px, 5vh, 64px); background: linear-gradient(rgba(14,36,46,0.42), rgba(14,36,46,0.72)), url('./assets/hero.jpg') center/cover no-repeat, repeating-linear-gradient(45deg, #c9dde8 0 14px, #d7e7ef 14px 28px); color: #f4f9fb; padding: clamp(20px, 4vw, 48px);">
+    <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 16px; flex-wrap: wrap;">
+      <div style="font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 600;">Stas &amp; Nick — travel filmmakers &amp; UGC creators</div>
+      <div style="font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase; opacity: 0.85;">Concept campaign · Visit Tahiti</div>
+    </div>
+    <div data-reveal style="max-width: 1000px;">
+      <div style="font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; opacity: 0.7; margin-bottom: 16px; display: none;">[ background: swap the hero URL in the header style for a different still or looping video ]</div>
+      <h1 class="hero-title" style="font-family: 'Instrument Serif', serif; font-weight: 400; font-size: clamp(44px, 8.5vw, 96px); line-height: 0.98; margin: 0 0 clamp(24px, 4vh, 40px); letter-spacing: -0.01em;">Beyond the Bungalow</h1>
+      <div style="font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 600; color: #8fc3da; margin-bottom: 16px;">The objective</div>
+      <p style="font-family: 'Instrument Serif', serif; font-size: clamp(20px, 2.9vw, 30px); line-height: 1.32; margin: 0; max-width: 880px;">Reframe the sister islands of Tahiti &amp; Moorea from a passive honeymoon backdrop into an <em style="color: #8fc3da;">active adventure and culture destination</em>.</p>
+      <p style="font-size: clamp(14px, 1.7vw, 17px); line-height: 1.6; max-width: 620px; margin: clamp(16px, 2.5vh, 24px) 0 0; opacity: 0.88;">5-video campaign moves a viewer from “wow” to “wait, I could actually do that” to “saved, let's plan it”, while sending demand toward small local operators rather than large hospitality chains.</p>
+    </div>
+  </header>
+
+  <!-- ===================== 4 · DELIVERABLES ===================== -->
+  <section style="padding: clamp(56px, 7vw, 96px) clamp(20px, 6vw, 96px); background: #0e242e; color: #eaf3f7;">
+    <div style="max-width: 1200px; margin: 0 auto;">
+      <div data-reveal style="margin-bottom: clamp(20px, 3vw, 32px);">
+        <div style="font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 600; color: #8fc3da;">The deliverables</div>
+      </div>
+
+      <!-- Each video box: replace the placeholder div with a <video> tag or a Cloudinary/Vimeo/YouTube iframe (width/height 100%) — the 9:16 frame stays intact. -->
+      <div data-reveal style="border-top: 1px solid rgba(143,195,218,0.25); padding: clamp(24px, 3vw, 36px) 0 clamp(56px, 7vw, 88px);">
+        <div class="vid-row" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: clamp(14px, 1.8vw, 28px);">
+          <div style="display: flex; flex-direction: column; gap: 14px;">
+            <div id="video-vaa-fishing" onClick="{{ toggleVideo }}" style="position: relative; aspect-ratio: 9 / 16; border-radius: 10px; overflow: hidden; background: #16323e; cursor: pointer;">
+              <video src="https://res.cloudinary.com/nr3qi8yk/video/upload/v1785218581/vaa_fishing_ge92f8.mp4" poster="./assets/vaa-fishing.jpg" preload="metadata" loop="{{ true }}" playsinline style="width: 100%; height: 100%; object-fit: cover; display: block;"></video>
+              <div data-play-overlay style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; background: rgba(14,36,46,0.25); transition: opacity 0.25s;">
+                <div style="width: 56px; height: 56px; border-radius: 50%; background: rgba(238,244,247,0.92); display: flex; align-items: center; justify-content: center;">
+                  <div style="width: 0; height: 0; border-top: 10px solid transparent; border-bottom: 10px solid transparent; border-left: 16px solid #0e242e; margin-left: 4px;"></div>
+                </div>
+              </div>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 8px; align-items: flex-start;">
+              <span style="font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: #8fc3da; border: 1px solid rgba(143,195,218,0.4); border-radius: 99px; padding: 3px 10px;">Cultural depth</span>
+              <h3 style="font-family: 'Instrument Serif', serif; font-weight: 400; font-size: 21px; line-height: 1.15; margin: 0;">Va'a Fishing</h3>
+            </div>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 14px;">
+            <div id="video-teahupoo" onClick="{{ toggleVideo }}" style="position: relative; aspect-ratio: 9 / 16; border-radius: 10px; overflow: hidden; background: #16323e; cursor: pointer;">
+              <video src="https://res.cloudinary.com/nr3qi8yk/video/upload/v1785217752/teahupoo_sxmht8.mp4" poster="./assets/teahupoo.jpg" preload="metadata" loop="{{ true }}" playsinline style="width: 100%; height: 100%; object-fit: cover; display: block;"></video>
+              <div data-play-overlay style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; background: rgba(14,36,46,0.25); transition: opacity 0.25s;">
+                <div style="width: 56px; height: 56px; border-radius: 50%; background: rgba(238,244,247,0.92); display: flex; align-items: center; justify-content: center;">
+                  <div style="width: 0; height: 0; border-top: 10px solid transparent; border-bottom: 10px solid transparent; border-left: 16px solid #0e242e; margin-left: 4px;"></div>
+                </div>
+              </div>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 8px; align-items: flex-start;">
+              <span style="font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: #8fc3da; border: 1px solid rgba(143,195,218,0.4); border-radius: 99px; padding: 3px 10px;">Adventure credibility</span>
+              <h3 style="font-family: 'Instrument Serif', serif; font-weight: 400; font-size: 21px; line-height: 1.15; margin: 0;">The Boat to Teahupo'o</h3>
+            </div>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 14px;">
+            <div id="video-5-things" onClick="{{ toggleVideo }}" style="position: relative; aspect-ratio: 9 / 16; border-radius: 10px; overflow: hidden; background: #16323e; cursor: pointer;">
+              <video src="https://res.cloudinary.com/nr3qi8yk/video/upload/v1785218505/wish_we_knew_tips_inexvl.mp4" poster="./assets/wish-we-knew-tips.jpg" preload="metadata" loop="{{ true }}" playsinline style="width: 100%; height: 100%; object-fit: cover; display: block;"></video>
+              <div data-play-overlay style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; background: rgba(14,36,46,0.25); transition: opacity 0.25s;">
+                <div style="width: 56px; height: 56px; border-radius: 50%; background: rgba(238,244,247,0.92); display: flex; align-items: center; justify-content: center;">
+                  <div style="width: 0; height: 0; border-top: 10px solid transparent; border-bottom: 10px solid transparent; border-left: 16px solid #0e242e; margin-left: 4px;"></div>
+                </div>
+              </div>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 8px; align-items: flex-start;">
+              <span style="font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: #8fc3da; border: 1px solid rgba(143,195,218,0.4); border-radius: 99px; padding: 3px 10px;">Save &amp; return</span>
+              <h3 style="font-family: 'Instrument Serif', serif; font-weight: 400; font-size: 21px; line-height: 1.15; margin: 0;">5 Things We Wish We Knew</h3>
+            </div>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 14px;">
+            <div id="video-moorea" onClick="{{ toggleVideo }}" style="position: relative; aspect-ratio: 9 / 16; border-radius: 10px; overflow: hidden; background: #16323e; cursor: pointer;">
+              <video src="https://res.cloudinary.com/nr3qi8yk/video/upload/v1785217439/you_me_moorea_z3syys.mp4" poster="./assets/you-me-moorea.jpg" preload="metadata" loop="{{ true }}" playsinline style="width: 100%; height: 100%; object-fit: cover; display: block;"></video>
+              <div data-play-overlay style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; background: rgba(14,36,46,0.25); transition: opacity 0.25s;">
+                <div style="width: 56px; height: 56px; border-radius: 50%; background: rgba(238,244,247,0.92); display: flex; align-items: center; justify-content: center;">
+                  <div style="width: 0; height: 0; border-top: 10px solid transparent; border-bottom: 10px solid transparent; border-left: 16px solid #0e242e; margin-left: 4px;"></div>
+                </div>
+              </div>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 8px; align-items: flex-start;">
+              <span style="font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: #8fc3da; border: 1px solid rgba(143,195,218,0.4); border-radius: 99px; padding: 3px 10px;">Share driver</span>
+              <h3 style="font-family: 'Instrument Serif', serif; font-weight: 400; font-size: 21px; line-height: 1.15; margin: 0;">You + Me… Moorea?</h3>
+            </div>
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: 14px;">
+            <div id="video-reef-shark" onClick="{{ toggleVideo }}" style="position: relative; aspect-ratio: 9 / 16; border-radius: 10px; overflow: hidden; background: #16323e; cursor: pointer;">
+              <video src="https://res.cloudinary.com/nr3qi8yk/video/upload/v1785217440/reef_shark_drift_lrlhlb.mp4" poster="./assets/reef-shark-drift.jpg" preload="metadata" loop="{{ true }}" playsinline style="width: 100%; height: 100%; object-fit: cover; display: block;"></video>
+              <div data-play-overlay style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; background: rgba(14,36,46,0.25); transition: opacity 0.25s;">
+                <div style="width: 56px; height: 56px; border-radius: 50%; background: rgba(238,244,247,0.92); display: flex; align-items: center; justify-content: center;">
+                  <div style="width: 0; height: 0; border-top: 10px solid transparent; border-bottom: 10px solid transparent; border-left: 16px solid #0e242e; margin-left: 4px;"></div>
+                </div>
+              </div>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 8px; align-items: flex-start;">
+              <span style="font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: #8fc3da; border: 1px solid rgba(143,195,218,0.4); border-radius: 99px; padding: 3px 10px;">Aspirational hook</span>
+              <h3 style="font-family: 'Instrument Serif', serif; font-weight: 400; font-size: 21px; line-height: 1.15; margin: 0;">Reef Shark Drift</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- How each one works -->
+      <div data-reveal>
+        <div style="font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 600; color: #8fc3da; margin-bottom: 24px;">The role each one plays</div>
+        <div style="border-top: 1px solid rgba(143,195,218,0.18); padding: clamp(24px, 3vw, 36px) 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px clamp(32px, 4vw, 64px); align-items: start;">
+          <div>
+            <div style="display: flex; align-items: baseline; gap: 12px; margin-bottom: 10px;">
+              <span style="font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 13px; color: #8fc3da;">01</span>
+              <span style="font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: #8fc3da; border: 1px solid rgba(143,195,218,0.4); border-radius: 99px; padding: 3px 10px;">Aspirational hook</span>
+            </div>
+            <h3 style="font-family: 'Instrument Serif', serif; font-weight: 400; font-size: clamp(24px, 2.6vw, 30px); margin: 0 0 6px;">Reef Shark Drift</h3>
+            <div style="font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; color: #7ba9bd;">Cinematic single shot · 5–20 sec · drone</div>
+          </div>
+          <p style="font-size: 15px; line-height: 1.65; color: #b9cfda; margin: 0; max-width: 520px;">One unbelievable image that buys attention and repositions the destination as wild, not just pretty. This is the shot that stops the scroll.</p>
+        </div>
+        <div style="border-top: 1px solid rgba(143,195,218,0.18); padding: clamp(24px, 3vw, 36px) 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px clamp(32px, 4vw, 64px); align-items: start;">
+          <div>
+            <div style="display: flex; align-items: baseline; gap: 12px; margin-bottom: 10px;">
+              <span style="font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 13px; color: #8fc3da;">02</span>
+              <span style="font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: #8fc3da; border: 1px solid rgba(143,195,218,0.4); border-radius: 99px; padding: 3px 10px;">Share driver</span>
+            </div>
+            <h3 style="font-family: 'Instrument Serif', serif; font-weight: 400; font-size: clamp(24px, 2.6vw, 30px); margin: 0 0 6px;">You + Me… Moorea?</h3>
+            <div style="font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; color: #7ba9bd;">Shareable cut · 10–15 sec · couple-focused, text overlay</div>
+          </div>
+          <p style="font-size: 15px; line-height: 1.65; color: #b9cfda; margin: 0; max-width: 520px;">Built to be sent in a DM. It seeds the trip as a two-person decision and moves Moorea from feed to a conversation.</p>
+        </div>
+        <div style="border-top: 1px solid rgba(143,195,218,0.18); padding: clamp(24px, 3vw, 36px) 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px clamp(32px, 4vw, 64px); align-items: start;">
+          <div>
+            <div style="display: flex; align-items: baseline; gap: 12px; margin-bottom: 10px;">
+              <span style="font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 13px; color: #8fc3da;">03</span>
+              <span style="font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: #8fc3da; border: 1px solid rgba(143,195,218,0.4); border-radius: 99px; padding: 3px 10px;">Cultural depth</span>
+            </div>
+            <h3 style="font-family: 'Instrument Serif', serif; font-weight: 400; font-size: clamp(24px, 2.6vw, 30px); margin: 0 0 6px;">Va'a Fishing</h3>
+            <div style="font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; color: #7ba9bd;">Unique experience · voiceover · 45–60 sec</div>
+          </div>
+          <p style="font-size: 15px; line-height: 1.65; color: #b9cfda; margin: 0; max-width: 520px;">Fishing the way Polynesians did 1,000 years ago, with the local guide who runs it as his business. Cultural depth and direct small-business support.</p>
+        </div>
+        <div style="border-top: 1px solid rgba(143,195,218,0.18); padding: clamp(24px, 3vw, 36px) 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px clamp(32px, 4vw, 64px); align-items: start;">
+          <div>
+            <div style="display: flex; align-items: baseline; gap: 12px; margin-bottom: 10px;">
+              <span style="font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 13px; color: #8fc3da;">04</span>
+              <span style="font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: #8fc3da; border: 1px solid rgba(143,195,218,0.4); border-radius: 99px; padding: 3px 10px;">Adventure credibility</span>
+            </div>
+            <h3 style="font-family: 'Instrument Serif', serif; font-weight: 400; font-size: clamp(24px, 2.6vw, 30px); margin: 0 0 6px;">The Boat to Teahupo'o</h3>
+            <div style="font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; color: #7ba9bd;">Unique experience · voiceover · 45–60 sec</div>
+          </div>
+          <p style="font-size: 15px; line-height: 1.65; color: #b9cfda; margin: 0; max-width: 520px;">A globally famous wave most travelers assume is off-limits, shown as an accessible day trip with a local captain. Discovery, with proof you can go too.</p>
+        </div>
+        <div style="border-top: 1px solid rgba(143,195,218,0.18); padding: clamp(24px, 3vw, 36px) 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px clamp(32px, 4vw, 64px); align-items: start;">
+          <div>
+            <div style="display: flex; align-items: baseline; gap: 12px; margin-bottom: 10px;">
+              <span style="font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 13px; color: #8fc3da;">05</span>
+              <span style="font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: #8fc3da; border: 1px solid rgba(143,195,218,0.4); border-radius: 99px; padding: 3px 10px;">Save &amp; return</span>
+            </div>
+            <h3 style="font-family: 'Instrument Serif', serif; font-weight: 400; font-size: clamp(24px, 2.6vw, 30px); margin: 0 0 6px;">5 Things We Wish We Knew</h3>
+            <div style="font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; color: #7ba9bd;">Value-packed savable · voiceover · 45–60 sec</div>
+          </div>
+          <p style="font-size: 15px; line-height: 1.65; color: #b9cfda; margin: 0; max-width: 520px;">The save-and-return asset. Practical, specific and generous, it turns inspiration into a plannable trip, and the profile into a resource worth following.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== 5 · TRANSFERABLE ===================== -->
+  <section style="padding: clamp(80px, 12vw, 160px) clamp(20px, 6vw, 96px); background: #eef4f7;">
+    <div data-reveal style="max-width: 860px; margin: 0 auto; text-align: center;">
+      <div style="font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 600; color: #146a8f; margin-bottom: 28px;">For your destination</div>
+      <p style="font-family: 'Instrument Serif', serif; font-size: clamp(24px, 3.6vw, 38px); line-height: 1.32; margin: 0;">We create cinematic travel campaigns and conversion-focused UGC that turn attention into saves, shares, and trip planning.</p>
+      <p style="font-size: clamp(15px, 1.8vw, 18px); line-height: 1.65; color: #16303c; font-weight: 500; margin: 28px auto 0; max-width: 560px;">Have a destination, property, or experience worth discovering?<br>Let’s build the campaign.</p>
+      <a href="mailto:gedetravels@gmail.com" style="display: inline-block; margin-top: 36px; font-size: clamp(17px, 2.2vw, 22px); font-weight: 500;">gedetravels@gmail.com</a>
+      <div style="margin-top: clamp(40px, 6vw, 64px); font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; font-weight: 600; color: #5f7f8e;">Stas &amp; Nick — travel filmmakers &amp; UGC creators</div>
+    </div>
+  </section>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;scrollReveals&quot;: {&quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Behavior&quot;}}">
+class Component extends DCLogic {
+  componentDidMount() {
+    document.querySelectorAll('[data-play-overlay]').forEach((o) => {
+      const v = o.parentElement.querySelector('video');
+      if (!v) return;
+      v.addEventListener('play', () => { o.style.opacity = '0'; });
+      v.addEventListener('pause', () => { o.style.opacity = '1'; });
+    });
+    if ((this.props.scrollReveals ?? true) === false) return;
+    const els = document.querySelectorAll('[data-reveal]');
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (e.isIntersecting) {
+          e.target.style.animation = 'rise 0.7s cubic-bezier(0.22,1,0.36,1) both';
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    els.forEach((el) => {
+      const r = el.getBoundingClientRect();
+      if (r.top < window.innerHeight) return; // already visible on load — don't hide
+      el.style.opacity = '0';
+      io.observe(el);
+    });
+    this._io = io;
+  }
+  componentWillUnmount() { if (this._io) this._io.disconnect(); }
+  renderVals() {
+    return {
+      toggleVideo: (e) => {
+        const v = e.currentTarget.querySelector('video');
+        if (!v) return;
+        if (v.paused) {
+          document.querySelectorAll('video').forEach((o) => { if (o !== v) o.pause(); });
+          v.muted = false;
+          v.play().catch(() => {});
+        } else {
+          v.pause();
+        }
+      }
+    };
+  }
+}
+</script>
+</body>
+</html>
